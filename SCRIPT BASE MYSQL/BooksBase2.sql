@@ -301,5 +301,26 @@ GROUP BY l.id_libro;
 
 select * from vista_libros_global;
 
+select * from vista_autores;
+
+-- vista de libros en base al autor
+create view vista_autor_libro as 
+SELECT 
+    l.id_libro,
+    l.titulo,
+    a.id_autor,
+    a.nombre_autor,
+    a.apellido_autor
+FROM libros as l
+join libro_autor as la
+on l.id_libro = la.id_libro
+join autores  as a 
+on la.id_autor = a.id_autor;
+
+select * from vista_autores;
+
+select * from libros;
+
+-- 
 
 
