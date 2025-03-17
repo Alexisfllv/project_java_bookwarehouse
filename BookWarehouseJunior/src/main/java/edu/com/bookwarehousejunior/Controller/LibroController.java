@@ -26,10 +26,7 @@ public class LibroController {
 
     private final LibroServiceLibro libroServiceLibro;
 
-//    @Autowired
-//    public LibroController(LibroService libroService) {
-//        this.libroService = libroService;
-//    }
+
 
     @PostMapping("/registro")
     public ResponseEntity<String> registrarLibro(@RequestBody LibroRequestDTO libroDTO) {

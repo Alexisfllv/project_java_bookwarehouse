@@ -325,4 +325,7 @@ select * from libros;
 
 select * from registros;
 
+--
+create database BOOKSWJUNIOR;
+
 
